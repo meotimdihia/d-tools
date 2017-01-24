@@ -140,11 +140,13 @@ var myChart<?php echo $key ?> = new Chart(ctx<?php echo $key ?>, {
                 borderColor: "#444",
                 fill:false,
 	            data: <?php echo json_encode(array_values($chartData)) ?>,
+	            pointRadius: 0,
 	        }
 	    ]
 	},
+
    	options: {
-   		responsive: false,
+   		responsive: true,
    		title:{
 			display: true,
 			text: '<?php echo $title ?>',
